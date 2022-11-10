@@ -20,7 +20,7 @@ function calcularOperaciones() {
     var result = eval(getResultado()); 
     setResultado(result);
 	if (result=='Infinity') 
-		setResultado('ERROR');
+		setResultado('No se puede dividir por 0');
 }
 
 function cambiarSigno(){
