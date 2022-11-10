@@ -1,0 +1,43 @@
+<!-- Elaborado por: Rodrigo Berríos Mendoza
+Descripción: 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Calculadora</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="estilo.css">
+	<script src="calcular.js"></script>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="pantalla">
+		<input type="text" id="datos" name="datos" readonly value="0"> 
+		</div>
+		<div class="numeros">
+		<input class="botones" type="button" id="CE" name="CE" value="CE" onclick="location.reload()">
+		<input class="botones" type="button" id="raiz" name="raiz" value="√" onclick="sqrt()">
+		<input class="botones" type="button" id="potencia" name="potencia" value="x2" onclick="potencia()">
+		<input class="botones" type="button" id="x" name="/" value="/" onclick="agregarDatos('/')">
+		<input class="botones" type="button" id="7" name="7" value="7" onclick="agregarDatos('7')">
+		<input class="botones" type="button" id="8" name="8" value="8" onclick="agregarDatos('8')">
+		<input class="botones" type="button" id="9" name="9" value="9" onclick="agregarDatos('9')">
+		<input class="botones" type="button" id="x" name="x" value="x" onclick="agregarDatos('*')">
+		<input class="botones" type="button" id="4" name="4" value="4" onclick="agregarDatos('4')">
+		<input class="botones" type="button" id="5" name="5" value="5" onclick="agregarDatos('5')">
+		<input class="botones" type="button" id="6" name="6" value="6" onclick="agregarDatos('6')">
+		<input class="botones" type="button" id="-" name="-" value="-" onclick="agregarDatos('-')">
+		<input class="botones" type="button" id="1" name="1" value="1" onclick="agregarDatos('1')">
+		<input class="botones" type="button" id="2" name="2" value="2" onclick="agregarDatos('2')">
+		<input class="botones" type="button" id="3" name="3" value="3" onclick="agregarDatos('3')">
+		<input class="botones" type="button" id="+" name="+" value="+" onclick="agregarDatos('+')">
+		<input class="botones" type="button" id="signo" name="signo" value="+/-" onclick="cambiarSigno(8)">
+		<input class="botones" type="button" id="0" name="0" value="0" onclick="agregarDatos('0')">
+		<input class="botones" type="button" id="decimal" name="decimal" value="." onclick="agregarDatos('.')">
+		<input class="botones" type="button" id="=" name="=" value="=" onclick="calcularOperaciones()">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/*Elaborado por:Rodrigo Berríos Mendoza
+ Descripción: Contienen las propiedades css aplicadas a cada elemento de la página. Se trató de aplicar también un diseño responsivo.
+ Año de elaboración: 2022
+*/
+body{
+	background-color:#164d7d
+}
+
+.contenedor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	height:550px;
+	width:400px;
+	border: 5px groove black;
+	border-radius: 30px;
+	background-color:#87887F;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pantalla{
+	margin-top:20px;
+	margin-left:5px;
+	height:60px;
+	width:390px;
+}
+
+#datos{
+	height:50px;
+	width:380px;
+	text-align:right;
+	font-family:Consolas;
+	font-size:40px;
+	color:#D7E52F;
+	border-radius: 30px;
+	background-color:#040505
+}
+
+.numeros{
+	margin-left:10px;
+}
+
+.botones{
+	height:90px;
+	width:90px;
+	background-color:#C9F7F7;
+	font-family:Consolas;
+	font-size:40px;
+	border-bottom:5px outset;
+	border-top:5px outset;
+	border-right: 5px outset;
+	border-left:5px outset;
+}
+
+.botones:hover{
+	background-color:#AED7D7;
+	transition: 0.7s;
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	height:320px;
+	width:200px;
+	border: 5px groove black;
+	border-radius: 15px;
+	background-color:#87887F;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  .pantalla{
+	margin-top:20px;
+	margin-left:5px;
+	height:60px;
+	width:100px;
+  }
+
+   #datos{
+	height:40px;
+	width:180px;
+	text-align:right;
+	font-family:Consolas;
+	font-size:20px;
+	color:#D7E52F;
+	border-radius: 15px;
+	background-color:#040505
+	}
+   .botones{
+	height:43px;
+	width:43px;
+	background-color:#C9F7F7;
+	font-family:Consolas;
+	font-size:20px;
+	border-bottom:5px outset;
+	border-top:5px outset;
+	border-right: 5px outset;
+	border-left:5px outset;
+   }
+}
